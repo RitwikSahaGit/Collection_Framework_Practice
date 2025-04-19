@@ -49,7 +49,10 @@ public class StreamTest {
 		Stream<Double> limit = Stream.generate(() -> Math.random()*100).limit(10);
 		System.out.println(limit.collect(Collectors.toList()));
 		
-		
+		//To increase readability
+		System.out.println();
+		System.out.println();
+		System.out.println();
 		
 		
 		//Stream operations
