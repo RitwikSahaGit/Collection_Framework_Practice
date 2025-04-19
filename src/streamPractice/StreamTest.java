@@ -77,6 +77,9 @@ public class StreamTest {
 		//Skip before limit and skip after limit
 		System.out.println(Stream.iterate(0, n->n+1).limit(100).skip(1).collect(Collectors.toList()));
 		
+		/*
+		 * Generate is a distributor and used to do something creation
+		 */
 		Stream<Double> limit = Stream.generate(() -> Math.random()*100).limit(10);
 		System.out.println(limit.collect(Collectors.toList()));
 		
