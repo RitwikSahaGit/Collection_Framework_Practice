@@ -58,13 +58,13 @@ public class StreamTest {
 		//Stream operations
 		List<Integer> list = Arrays.asList(1,2,35,3,5,667,24,56,0,2,24);
 		
-		System.out.println(list);
+		System.out.println("List -> " + list);
 		
 		List<Integer> newList =list.stream().filter(x->x%2==1).map(x->x+1).distinct().sorted((a,b)->(b-a)).collect(Collectors.toList());
-		System.out.println(newList);
+		System.out.println("New list post Filter, Map, Distinct, Sorted function"+newList);
 		
 		List<Integer> limitAndSkip = newList.stream().limit(4).skip(1).collect(Collectors.toList());
-		System.out.println(limitAndSkip);
+		System.out.println("New list post limit, skip function" + limitAndSkip);
 		
 		/*
 		 * Stream.iterate things are shown below
@@ -73,12 +73,15 @@ public class StreamTest {
 		
 		//Printing 0 to 21 and skipping the 1st value that is 0.
 		List<Integer> iterate = Stream.iterate(0, n->n+1).skip(1).limit(21).collect(Collectors.toList());
-		System.out.println(iterate);
+		System.out.println("Printing 0 to 21 and skipping the 1st value that is 0 ->" + iterate);
 		
-		int i = list.stream().peek(x->System.out.println(x)).max((a,b) ->(a-b)).get();
-		System.out.println(i);
-		System.out.println();
-		System.out.println(list.stream().count());
+		
+		
+		int i = list.stream().max((a,b) ->(a-b)).get();
+		System.out.println("Printing the value ->" + i);
+		System.out.println("using Peek operation to print all the element one by one ->" );
+		list.stream().peek(x->System.out.println(x)).collect(Collectors.toList());
+		System.out.println("Printing the count of the element in the List -> " + list.stream().count());
 		
 		//merging tow array
 		int[] arr = {0,1,2,3,4}, arr2 = {5,6,7,8,9};
