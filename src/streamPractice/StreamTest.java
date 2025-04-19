@@ -1,5 +1,6 @@
 package streamPractice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collector;
@@ -46,7 +47,41 @@ public class StreamTest {
 		List<Integer> odd = numberList.stream().filter(x->x%2!=0).collect(Collectors.toList());
 		System.out.println(odd);
 		
-
+		//creating a Stream from Array
+		String[] arrayOffruit = {"Apple", "Banana", "mango"};
+ 		Stream<String> stream = Arrays.stream(arrayOffruit);
+		System.out.println(stream.collect(Collectors.toList()));
+		
+		//creating a stream from List
+		List<Integer> listOfInteger = Arrays.asList(1,2,35,3,5,667,24,56,0,2,24);
+		Stream<Integer> streamOfInteger = listOfInteger.stream();
+		System.out.println(streamOfInteger.collect(Collectors.toList()));
+		
+		//creating a Stream from a ArrayList
+		List<String> friend = new ArrayList<>();
+		friend.add("Sayan");
+		friend.add("Supratim");
+		friend.add("Akram");
+		friend.add("Subhajit");
+		Stream<String> streamOfFriend = friend.stream();
+		System.out.println(streamOfFriend.collect(Collectors.toList()));
+		
+		//Creating a stream
+		Stream<Integer> integerStream = Stream.of(1,2,3,4,5);
+		/*
+		 * Iterate is used for loop sceneries
+		 */
+		Stream<Integer> intStream =  Stream.iterate(0, n->n+1).skip(1).limit(100);
+		System.out.println(intStream.collect(Collectors.toList()));
+		
+		//Skip before limit and skip after limit
+		System.out.println(Stream.iterate(0, n->n+1).limit(100).skip(1).collect(Collectors.toList()));
+		
+		Stream<Double> limit = Stream.generate(() -> Math.random()*100).limit(10);
+		System.out.println(limit.collect(Collectors.toList()));
+		
+		
+		
 	}
 
 }
