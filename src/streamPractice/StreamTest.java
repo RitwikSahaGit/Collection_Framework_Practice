@@ -76,7 +76,7 @@ public class StreamTest {
 		System.out.println("Printing 0 to 21 and skipping the 1st value that is 0 ->" + iterate);
 		
 		
-		
+		//Max gives optional value so we need to use get() function.
 		int i = list.stream().max((a,b) ->(a-b)).get();
 		System.out.println("Printing the value ->" + i);
 		System.out.println("using Peek operation to print all the element one by one ->" );
@@ -95,8 +95,14 @@ public class StreamTest {
 		System.out.println(odd);
 		
 		
+		Stream<Integer> printInteger =  Stream.iterate(0, x->x+1).skip(1).limit(100);
+		//Stream<Integer> printIntegerParallel = printInteger.parallel().filter(x->x%2==0);
+		//System.out.println(printIntegerParallel.collect(Collectors.toList()));
+		
+		
 		
 		
 	}
+
 
 }
