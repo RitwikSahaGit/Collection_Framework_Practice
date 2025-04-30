@@ -129,8 +129,18 @@ public class Pattern {
 	}
 	public static void hollowRectangle(int r, int c) {
 		
+//		1,1* 1,2* 1,3* 1,4* 1,5*
+//		2,1*                2,5*
+//		3,1*   	            3,5*
+//		4,1* 4,1* 4,3* 4,4* 4,5*
+		
+		//in case of hollow rectangle we can see the stars are present at the place either 
+		//the values are 1 for i and j variable or the values are max for i and j variable
+		
 		for(int i=1; i<=r; i++) {
 			for(int j = 1; j<=c; j++) {
+				//in case of hollow rectangle we can see the stars are present at the place either 
+				//the values are 1 for i and j variable or the values are max for i and j variable.
 				if(i==1 || j==1 || i==r||j==c) {
 					System.out.print("*");
 				}
