@@ -8,27 +8,28 @@ public class Pattern {
 		
 
 		System.out.println("rightHalfPyramid");
-		rightHalfPyramid(8);
+		rightHalfPyramid(4);
 		System.out.println("invertedRightHalfPyramid");
-		invertedRightHalfPyramid(8);
+		invertedRightHalfPyramid(4);
 		System.out.println("leftHalfPyramid");
 		leftHalfPyramid(4);
 		System.out.println("revartedLeftHalfPyramid");
 		revartedLeftHalfPyramid(4);
 		System.out.println("solidRectangle");
-		solidRectangle(10);
+		solidRectangle(4);
 		System.out.println("hollowRectangle");
 		hollowRectangle(4,5);
 		System.out.println("leftHalfDiamond");
-		leftHalfDiamond(5);
+		leftHalfDiamond(4);
 
 	}
 	
 	public static void rightHalfPyramid(int n) {
-//	    *
-//		**
-//		***
-//		****
+// i
+//	1   *      Star = 1 = i
+//	2	**     Star = 2 = i
+//	3	***    Star = 3 = i
+//	4	****   Star = 4 = i
 //		1 
 //		2 3 
 //		4 5 6 
