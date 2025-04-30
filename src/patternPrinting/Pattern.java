@@ -156,14 +156,18 @@ public class Pattern {
 	private static void leftHalfDiamond(int n) {
 		// TODO Auto-generated method stub
 
+		
+//		    *
+//		   **
+//		  ***
+//		 ****
+//		 ****
+//		  ***
+//		   **
+//		    *
+		
+//		same logic as leftHalfPyramid and revartedLeftHalfPyramid
 		for(int i = 1; i<=n; i++) {
-//			for(int j = n-1; j>i; j--) {
-//				System.out.print(" ");
-//			}
-//			for(int j = 0; j<=i; j++) {
-//				System.out.print("*");
-//			}
-//			System.out.println();
 			for(int j= 1; j<=n-i; j++) {
 				System.out.print(" ");
 			}
