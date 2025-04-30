@@ -44,25 +44,31 @@ public class Pattern {
 	}
 	
 	public static void invertedRightHalfPyramid(int n) {
-//		*****
-//		****
-//		***
-//		**
-//		*
-		
-//		for(int i = n; i>0; i--) {
-//			for(int j = i; j>0; j-- ) {
-//				System.out.print("*");
-//				
-//			}
-//			System.out.println();
-//		}
-		for(int i = n; i>0; i--) {
+// i
+//	4	**** i=4 j loop will run 4 times so 4 star
+//	3	***	 i=3 j loop will run 3 times so 3 star
+//	2	**   i=2 j loop will run 2 times so 2 star
+//	1	*    i=1 j loop will run 1 times so 1 star
+
+		for(int i = n; i>=1; i--) {
+			//inner loop for star printing
 			for(int j = 1; j<=i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+		
+//      i
+//		1	**** star=4 =n-i+1= 4-1+1
+//		2	***	 star=3 =n-i+1 =4-2+1
+//		3	**   star=2 =n-i+1 =4-3+1
+//		4	*    star=1 =n-i+1 =4-4+1
+//		for(int i = 1; i<=n; i++) {
+//			for(int j = 1; j<=n-i+1; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
 		
 	
 	}
