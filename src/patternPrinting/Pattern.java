@@ -66,11 +66,11 @@ public class Pattern {
 	
 	}
 	public static void leftHalfPyramid(int n) {
-		
-//		   *space=3=n-i, *=1=i total=n=4
-//		  **space=2=n-i, *=2=i total=n=4
-//		 ***space=1=n-i, *=3=i total=n=4
-//		****space=0=n-i, *=4=i total=n=4
+//	i	
+//	1	   *space=3=n-i, *=1=i total=n=4
+//	2	  **space=2=n-i, *=2=i total=n=4
+//	3	 ***space=1=n-i, *=3=i total=n=4
+//	4	****space=0=n-i, *=4=i total=n=4
 		for(int i = 1; i<=n; i++) {
 			//inner loop for space printing
 			for(int j= 1; j<=n-i; j++) {
@@ -88,10 +88,11 @@ public class Pattern {
 	}
 	
 	public static void revartedLeftHalfPyramid(int n) {
-//		**** space=0 = i, *=4=n-i total=n=4
-//		 *** space=1 = i, *=3=n-i total=n=4
-//		  ** space=2 = i, *=2=n-i total=n=4
-//		   * space=3 = i, *=1=n-i total=n=4
+//	i
+//	0	**** space=0 = i, *=4=n-i total=n=4
+//	1	 *** space=1 = i, *=3=n-i total=n=4
+//	2	  ** space=2 = i, *=2=n-i total=n=4
+//	3	   * space=3 = i, *=1=n-i total=n=4
 		for(int i = 0; i<n; i++) {
 			//inner loop for space printing
 			for(int j = 1; j<=i;j++) {
