@@ -25,7 +25,7 @@ public class Pattern {
 	}
 	
 	public static void rightHalfPyramid(int n) {
-// i
+//  i
 //	1   *      Star = 1 = i j will run 1 times 1 star
 //	2	**     Star = 2 = i j will run 2 times 2 star
 //	3	***    Star = 3 = i j will run 3 times 3 star
