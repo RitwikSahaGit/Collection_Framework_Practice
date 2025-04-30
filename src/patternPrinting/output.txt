@@ -1,0 +1,39 @@
+rightHalfPyramid
+*
+**
+***
+****
+invertedRightHalfPyramid
+****
+***
+**
+*
+leftHalfPyramid
+   *
+  **
+ ***
+****
+revartedLeftHalfPyramid
+****
+ ***
+  **
+   *
+solidRectangle
+* * * * 
+* * * * 
+* * * * 
+* * * * 
+hollowRectangle
+*****
+*   *
+*   *
+*****
+leftHalfDiamond
+   *
+  **
+ ***
+****
+****
+ ***
+  **
+   *
