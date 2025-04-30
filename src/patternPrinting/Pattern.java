@@ -25,7 +25,7 @@ public class Pattern {
 	}
 	
 	public static void rightHalfPyramid(int n) {
-//  i
+//	i
 //	1   *      Star = 1 = i j will run 1 times 1 star
 //	2	**     Star = 2 = i j will run 2 times 2 star
 //	3	***    Star = 3 = i j will run 3 times 3 star
@@ -44,7 +44,7 @@ public class Pattern {
 	}
 	
 	public static void invertedRightHalfPyramid(int n) {
-// i
+//	i
 //	4	**** i=4 j loop will run 4 times so 4 star
 //	3	***	 i=3 j loop will run 3 times so 3 star
 //	2	**   i=2 j loop will run 2 times so 2 star
@@ -113,7 +113,7 @@ public class Pattern {
 		}
 	}
 	public static void solidRectangle(int n) {
-// i	
+//	i	
 //	1	* * * * row and column are same so loop will run n times
 //	2	* * * * 
 //	3	* * * * 
