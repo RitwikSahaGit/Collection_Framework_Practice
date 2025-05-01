@@ -23,8 +23,10 @@ public class Pattern {
 //		leftHalfDiamond(4);
 //		System.out.println("rightHalfPyramidWithNumber");
 //		rightHalfPyramidWithNumber(4);
-		System.out.println("invertedRightHalfPyramidWithNumber");
-		invertedRightHalfPyramidWithNumber(4);
+//		System.out.println("invertedRightHalfPyramidWithNumber");
+//		invertedRightHalfPyramidWithNumber(4);
+		System.out.println("floydsTriangle");
+		floydsTriangle(4);
 
 	}
 	
@@ -224,6 +226,23 @@ public class Pattern {
 			}
 			System.out.println();
 		}
+	}
+	private static void floydsTriangle(int n) {
+
+//	1	1         i = 1; j will loop till 1
+//	2	2 3       i = 2; j will loop till 2
+//	3	4 5 6     i = 3; j will loop till 3
+//	4	7 8 9 10  i = 4; j will loop till 4
+		//num is a variable what keeps increasing with each j loop
+		int num=1;
+		for(int i=1; i<=n; i++) {
+			for(int j=1; j<=i; j++) {
+				System.out.print(num + " ");
+				num ++;
+			}
+			System.out.println();
+		}
+
 	}
 }
 	
