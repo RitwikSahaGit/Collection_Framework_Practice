@@ -25,8 +25,10 @@ public class Pattern {
 //		rightHalfPyramidWithNumber(4);
 //		System.out.println("invertedRightHalfPyramidWithNumber");
 //		invertedRightHalfPyramidWithNumber(4);
-		System.out.println("floydsTriangle");
-		floydsTriangle(4);
+//		System.out.println("floydsTriangle");
+//		floydsTriangle(4);
+		System.out.println("zeroOneTriangle");
+		zeroOneTriangle(4);
 
 	}
 	
@@ -244,6 +246,33 @@ public class Pattern {
 		}
 
 	}
+
+	private static void zeroOneTriangle(int n) {
+		// TODO Auto-generated method stub
+//		1
+//		01
+//		101
+//		0101
+		
+		//logic is written in resource.docx
+		int zero=0, one=1; 
+		for(int i=1; i<=n; i++) {
+			for(int j =1; j<=i; j++) {
+				int sum = 0;
+				sum = i+j;
+				if(sum%2 == 0) {
+					System.out.print(one+ " ");
+				}
+				else {
+					System.out.print(zero+ " ");
+				}
+			}
+			System.out.println();
+			
+		}
+	}
+
+
 }
 	
 
