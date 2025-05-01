@@ -6,21 +6,23 @@ public class Pattern {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-
-		System.out.println("rightHalfPyramid");
-		rightHalfPyramid(4);
-		System.out.println("invertedRightHalfPyramid");
-		invertedRightHalfPyramid(4);
-		System.out.println("leftHalfPyramid");
-		leftHalfPyramid(4);
-		System.out.println("revartedLeftHalfPyramid");
-		revartedLeftHalfPyramid(4);
-		System.out.println("solidRectangle");
-		solidRectangle(4);
-		System.out.println("hollowRectangle");
-		hollowRectangle(4,5);
-		System.out.println("leftHalfDiamond");
-		leftHalfDiamond(4);
+//
+//		System.out.println("rightHalfPyramid");
+//		rightHalfPyramid(4);
+//		System.out.println("invertedRightHalfPyramid");
+//		invertedRightHalfPyramid(4);
+//		System.out.println("leftHalfPyramid");
+//		leftHalfPyramid(4);
+//		System.out.println("revartedLeftHalfPyramid");
+//		revartedLeftHalfPyramid(4);
+//		System.out.println("solidRectangle");
+//		solidRectangle(4);
+//		System.out.println("hollowRectangle");
+//		hollowRectangle(4,5);
+//		System.out.println("leftHalfDiamond");
+//		leftHalfDiamond(4);
+		System.out.println("rightHalfPyramidWithNumber");
+		rightHalfPyramidWithNumber(4);
 
 	}
 	
@@ -152,7 +154,7 @@ public class Pattern {
 			System.out.println();
 		}
 	}
-	
+
 	private static void leftHalfDiamond(int n) {
 		// TODO Auto-generated method stub
 
@@ -189,7 +191,23 @@ public class Pattern {
 		}
 
 	}
-	
+	private static void rightHalfPyramidWithNumber(int n) {
+		
+//	1	1    i is 1 so max value of j is 1
+//	2	12   i is 2 so max value of j is 2
+//	3	123  i is 3 so max value of j is 3
+//	4	1234 i is 4 so max value of j is 4
+		//this prints the value of j (column). j goes till i so each time the max
+		//value of j is the value of i.
+		for(int i=1; i<=n; i++) {
+			for(int j = 1; j<=i; j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		
+		
+	}
 	
 }
 	
