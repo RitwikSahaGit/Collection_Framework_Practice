@@ -144,7 +144,7 @@ public class Pattern {
 		
 		//in case of hollow rectangle we can see the stars are present at the place either 
 		//the values are 1 for i and j variable or the values are max for i and j variable
-		
+		//logic is written in resource.docx
 		for(int i=1; i<=r; i++) {
 			for(int j = 1; j<=c; j++) {
 				//in case of hollow rectangle we can see the stars are present at the place either 
