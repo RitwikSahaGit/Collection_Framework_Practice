@@ -193,10 +193,10 @@ public class Pattern {
 	}
 	private static void rightHalfPyramidWithNumber(int n) {
 		
-//	1	1    i is 1 so max value of j is 1
-//	2	12   i is 2 so max value of j is 2
-//	3	123  i is 3 so max value of j is 3
-//	4	1234 i is 4 so max value of j is 4
+//	1	1    i is 1 so j will loop till 1
+//	2	12   i is 2 so j will loop till 2
+//	3	123  i is 3 so j will loop till 3
+//	4	1234 i is 4 so j will loop till 4
 		//this prints the value of j (column). j goes till i so each time the max
 		//value of j is the value of i.
 		for(int i=1; i<=n; i++) {
