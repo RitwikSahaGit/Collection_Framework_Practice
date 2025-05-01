@@ -27,8 +27,8 @@ public class Pattern {
 //		invertedRightHalfPyramidWithNumber(4);
 //		System.out.println("floydsTriangle");
 //		floydsTriangle(4);
-//		System.out.println("zeroOneTriangle");
-//		zeroOneTriangle(4);
+		System.out.println("zeroOneTriangle");
+		zeroOneTriangle(4);
 
 	}
 	
@@ -255,16 +255,15 @@ public class Pattern {
 //		0101
 		
 		//logic is written in resource.docx
-		int zero=0, one=1; 
 		for(int i=1; i<=n; i++) {
 			for(int j =1; j<=i; j++) {
 				int sum = 0;
 				sum = i+j;
-				if(sum%2 == 0) {
-					System.out.print(one+ " ");
+				if(sum%2 == 0) {//when the sum is Even we print 1
+					System.out.print("1 ");
 				}
-				else {
-					System.out.print(zero+ " ");
+				else {//when the sum is ODD we print 1
+					System.out.print("0 ");
 				}
 			}
 			System.out.println();
