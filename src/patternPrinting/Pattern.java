@@ -21,8 +21,10 @@ public class Pattern {
 //		hollowRectangle(4,5);
 //		System.out.println("leftHalfDiamond");
 //		leftHalfDiamond(4);
-		System.out.println("rightHalfPyramidWithNumber");
-		rightHalfPyramidWithNumber(4);
+//		System.out.println("rightHalfPyramidWithNumber");
+//		rightHalfPyramidWithNumber(4);
+		System.out.println("invertedRightHalfPyramidWithNumber");
+		invertedRightHalfPyramidWithNumber(4);
 
 	}
 	
@@ -208,7 +210,21 @@ public class Pattern {
 		
 		
 	}
-	
+
+	private static void invertedRightHalfPyramidWithNumber(int n) {
+		
+//	1	1234 n-i+1 = 4-1+1 = 4 j will loop till 4
+//	2	123  n-i+1 = 4-2+1 = 3 j will loop till 3
+//	3	12   n-i+1 = 4-3+1 = 2 j will loop till 2
+//	4	1    n-i+1 = 4-4+1 = 1 j will loop till 1
+		
+		for(int i=1; i<=n; i++) {
+			for(int j = 1; j<=n-i+1; j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+	}
 }
 	
 
