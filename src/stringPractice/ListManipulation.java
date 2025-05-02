@@ -23,7 +23,7 @@ public class ListManipulation {
         
         
         //Check for missing number
-        int[] arr= {0,1,2,4,5,6,7,9};
+        int[] arr= {1, 2, 3, 5};
         System.out.println("checkForMissingNumber");
         checkForMissingNumber(arr);
         
@@ -39,10 +39,10 @@ public class ListManipulation {
 //			Output: 4
 //			Explanation: Here the size of the array is 4, so the range will be [1, 5]. The missing number between 1 to 5 is 4
 	public static void checkForMissingNumber(int[] arr){
-		int length = arr.length+1;
-		System.out.println("Length = " + arr.length);
+		int length = arr.length+1; 
+		//[1, 2, 3, 5] length = 4. as 1 element is missing so the length we have to check 1 more.
 		
-		int missingValue = 0;
+		
 		for(int i = 1; i<=length; i++) {
 			boolean flag = false;
 			
@@ -50,11 +50,11 @@ public class ListManipulation {
 			{
 				if(arr[j] == i) 
 				{
-					flag=true;
-					break;
+					flag=true;//when ever any value is found in array this flag is true.
 				}
-				
 			}
+			
+			
 			if(!flag) {
 				System.out.println(i);
 			}
