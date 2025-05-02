@@ -1,4 +1,4 @@
-package pkg;
+package collections;
 
 public class Tester {
 
