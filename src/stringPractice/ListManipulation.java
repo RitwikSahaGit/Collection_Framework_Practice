@@ -23,9 +23,11 @@ public class ListManipulation {
         
         
         //Check for missing number
-        int[] arr= {1, 2, 3, 5};
+        int[] arr= {8, 2, 4, 5, 3, 7, 1};
         System.out.println("checkForMissingNumber");
         checkForMissingNumber(arr);
+        
+        checkForMissingNumberAlternative(arr);
         
         
 	}
@@ -61,6 +63,19 @@ public class ListManipulation {
 		}		
 		
     }
+
+	public static void checkForMissingNumberAlternative(int[] arr) {
+		int sumOfArray = 0;
+		int limit= arr.length+1;
+		for(int i =0; i<arr.length; i++) {
+			sumOfArray = sumOfArray + arr[i];
+		}
+		
+		int sumOfLimit = (limit*(limit+1))/2;
+		
+		System.out.println(sumOfLimit - sumOfArray);
+		
+	}
 }
 
 
