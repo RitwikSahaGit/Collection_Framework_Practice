@@ -23,11 +23,11 @@ public class ListManipulation {
         
         
         //Check for missing number
-        int[] arr= {8, 2, 4, 5, 3, 7, 1};
+        int[] arr= {1,2,4,5,6,8};
         System.out.println("checkForMissingNumber");
         checkForMissingNumber(arr);
         
-        checkForMissingNumberAlternative(arr);
+       // checkForMissingNumberAlternative(arr);
         
         
 	}
@@ -53,6 +53,7 @@ public class ListManipulation {
 				if(arr[j] == i) 
 				{
 					flag=true;//when ever any value is found in array this flag is true.
+					break;
 				}
 			}
 			
@@ -73,9 +74,11 @@ public class ListManipulation {
 		
 		int sumOfLimit = (limit*(limit+1))/2;
 		
-		System.out.println(sumOfLimit - sumOfArray);
+		System.out.println(sumOfLimit +" " +sumOfArray);
 		
 	}
+
+
 }
 
 
