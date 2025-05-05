@@ -6,7 +6,7 @@ public class Tester {
 		// TODO Auto-generated method stub
 		Parent obj = new Child();
 		System.out.println(obj.a);
-		//instance variable gets called from the Parent/Reference
+		//instance VARIABLE 'a' gets called from the Parent/Reference
 		obj.show();//methods gets called of Child
 		
 		//obj.childShow();// This is not possible as Parent does not have this method
