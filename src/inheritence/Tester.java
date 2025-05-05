@@ -9,7 +9,7 @@ public class Tester {
 		//instance variable gets called from the Parent/Reference
 		obj.show();//methods gets called of Child
 		
-		obj.childShow();// This is not possible as Parent does not have this method
+		//obj.childShow();// This is not possible as Parent does not have this method
 	}
 
 }
