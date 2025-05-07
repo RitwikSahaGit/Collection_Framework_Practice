@@ -44,9 +44,8 @@ public class StringPractice {
 //		output 
 //		Anagram Check
 //		Anagram? true
-		
-		
-
+		System.out.println("Is Palindrom??");
+		isPalindrom("abcba");
 
 	}
 	
@@ -90,6 +89,26 @@ public class StringPractice {
 //		The above if condition can be derived as below
 		return Arrays.equals(charArray1, charArray2);
 		
+	}
+	
+	public static void isPalindrom(String s ) {
+		int start = 0;
+		int end = s.length()-1;
+		
+		boolean flag = false;
+		while(start<end) {
+			if(s.charAt(start)!=s.charAt(end)) {
+				flag=true;	
+			}
+			start++;
+			end--;
+		}
+		if(flag) {
+			System.out.println("Not Palindrom");
+		}
+		else {
+			System.out.println("Palindrom");
+		}
 	}
 	
 
