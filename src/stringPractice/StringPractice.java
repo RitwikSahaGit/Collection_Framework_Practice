@@ -44,8 +44,16 @@ public class StringPractice {
 //		output 
 //		Anagram Check
 //		Anagram? true
+		
+		
+		System.out.println();
 		System.out.println("Is Palindrom??");
 		isPalindrom("abcba");
+		
+		System.out.println();
+		System.out.println("Reversal of a String");
+		stringReverseAlternate("abcd");
+		
 
 	}
 	
@@ -111,6 +119,17 @@ public class StringPractice {
 		}
 	}
 	
-
+	public static void stringReverseAlternate(String s) {
+		int start = 0;
+		int end = s.length()-1;
+		char[] arr = s.toCharArray();
+		while(start<end) {
+			char temp= arr[start];
+			arr[start]  = arr[end];
+			arr[end] = temp;
+			start++; end--;
+		}
+		System.out.println(arr);
+	}
 
 }
