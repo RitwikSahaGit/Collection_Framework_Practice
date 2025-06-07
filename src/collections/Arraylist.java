@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Arraylist {
 
@@ -94,6 +95,20 @@ public class Arraylist {
 	    list.remove(Integer.valueOf(6));
 	    System.out.println("Element of the List is " + list);
 	
+	    List<Integer> newList1 = new ArrayList<>();
+	    newList1 = List.of(1,2,3,4,5);
+	    
+	    List<Integer> coal = new CopyOnWriteArrayList<>(newList1);
+	   
+	    for(int i:coal) {
+	    	if(i==3) {
+	    		coal.remove(i);
+	    	}
+	    }
+	    newList1 = coal;
+	    System.out.println(newList1);
+	    System.out.println(coal);
+	    
  
 	}
 
